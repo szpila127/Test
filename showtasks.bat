@@ -6,7 +6,9 @@ goto fail
 
 :openbrowser
 start chrome http://localhost:8080/crud/v1/task/getTasks
-goto end
+if "%ERRORLEVEL%" == "0" goto end
+echo.
+echo Cannot open Chrome and show tasks - breaking work
 
 :end
 echo.
