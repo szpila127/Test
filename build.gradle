@@ -25,7 +25,4 @@ dependencies {
 
 	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     compile 'mysql:mysql-connector-java'
-
-	compile group: 'gradle.plugin.com.felipefzdz.gradle.heroku', name: 'gradle-heroku-plugin', version: '1.0.7'
-
 }
