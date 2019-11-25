@@ -43,7 +43,6 @@ public class TrelloClient {
         if (boardsResponse != null) {
             return Arrays.asList(boardsResponse);
         }
-        System.out.println(url);
         return new ArrayList<>();
 
 
