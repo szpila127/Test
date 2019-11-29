@@ -42,13 +42,12 @@ public class TrelloClient {
             return new ArrayList<>();
         }
 
-
-
 //        TrelloBoardDto[] boardsResponse = restTemplate.getForObject("https://api.trello.com/1/members/sebastianinglot/boards?key=4a3548f428e3b44267d1006be08182e0&token=bce1d0c620988cdecbebc930fc90b01b48f5f0ad81ff4f000532f0fa958d0a3a&fields=name,id", TrelloBoardDto[].class);
 
 //        TrelloBoardDto[] boardsResponse = restTemplate.getForObject(
 //                trelloApiEndpoint + "/members/sebastianinglot/boards"
 //                        + "?key=" + trelloAppKey + "&token=" + trelloToken, TrelloBoardDto[].class);
+        
     }
 
     private URI prepareUrl() {
