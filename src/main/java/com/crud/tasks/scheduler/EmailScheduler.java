@@ -36,9 +36,7 @@ public class EmailScheduler {
             default:
                 MESSAGE = "Currently in database you got: " + size + " tasks.";
         }
-        simpleEmailService.send(new
-
-                Mail(
+        simpleEmailService.send(new Mail(
                 adminConfig.getAdminMail(),
                 SUBJECT,
                 MESSAGE));
