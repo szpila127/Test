@@ -25,20 +25,20 @@ public class EmailScheduler {
     @Scheduled(fixedDelay = 10000)
     public void sendInformationEmail() {
         long size = taskRepository.count();
-        String MESSAGE;
+        String message;
         switch ((int) size) {
             case 0:
-                MESSAGE = "Currently in database you got: nothing :)";
+                message = "Currently in database you got: nothing :)";
                 break;
             case 1:
-                MESSAGE = "Currently in database you got: 1 task.";
+                message = "Currently in database you got: 1 task.";
                 break;
             default:
-                MESSAGE = "Currently in database you got: " + size + " tasks.";
+                message = "Currently in database you got: " + size + " tasks.";
         }
         simpleEmailService.send(new Mail(
                 adminConfig.getAdminMail(),
                 SUBJECT,
-                MESSAGE));
+                message));
     }
 }
