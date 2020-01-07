@@ -3,7 +3,7 @@ package com.crud.tasks.controller;
 import com.crud.tasks.domain.TrelloBoardDto;
 import com.crud.tasks.domain.cards.CreatedTrelloCardDto;
 import com.crud.tasks.domain.cards.TrelloCardDto;
-import com.crud.tasks.trello.facade.TrelloFacade;
+import com.crud.tasks.facade.TrelloFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
