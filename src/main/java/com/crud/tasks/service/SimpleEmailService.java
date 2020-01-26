@@ -25,11 +25,11 @@ public class SimpleEmailService {
     public void send(final Mail mail) {
         LOGGER.info("Starting mail preparation...");
         try {
-//            if (mail.getMessage().substring(0, 8).equals("New card")) {
-//                javaMailSender.send(createMimeMessageForTrello(mail));
-//            } else if (mail.getMessage().substring(0, 9).equals("Currently")) {
+            if (mail.getMessage().substring(0, 8).equals("New card")) {
+                javaMailSender.send(createMimeMessageForTrello(mail));
+            } else if (mail.getMessage().substring(0, 9).equals("Currently")) {
                 javaMailSender.send(createMimeMessageForTasksAmount(mail));
-//            } else javaMailSender.send(createMailMessage(mail));
+            } else javaMailSender.send(createMailMessage(mail));
             LOGGER.info("Email has been sent.");
         } catch (MailException e) {
             LOGGER.error("Failed  to process email sending: ", e.getMessage(), e);
