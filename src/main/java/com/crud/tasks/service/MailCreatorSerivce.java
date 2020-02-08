@@ -32,7 +32,7 @@ public class MailCreatorSerivce {
         functionality.add("Application allows sending tasks to Trello");
 
         Context context = new Context();
-        context.setVariable("preview_message", message.substring(0,50));
+        context.setVariable("preview_message", message.substring(0, 50));
         context.setVariable("message", message);
         context.setVariable("task_url", "https://szpila127.github.io/");
         context.setVariable("button", "Visit website");
@@ -49,7 +49,7 @@ public class MailCreatorSerivce {
     public String buildTaskAmountEmail(String message) {
 
         Context context = new Context();
-        context.setVariable("preview_message", message.substring(0,30));
+        context.setVariable("preview_message", message.substring(0, 30));
         context.setVariable("message", message);
         context.setVariable("task_url", "https://szpila127.github.io/");
         context.setVariable("button", "Your app");
