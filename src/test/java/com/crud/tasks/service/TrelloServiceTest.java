@@ -5,7 +5,6 @@ import com.crud.tasks.domain.TrelloListDto;
 import com.crud.tasks.domain.cards.CreatedTrelloCardDto;
 import com.crud.tasks.domain.cards.TrelloCardDto;
 import com.crud.tasks.trello.client.TrelloClient;
-import com.crud.tasks.trello.config.AdminConfig;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,12 +25,6 @@ public class TrelloServiceTest {
 
     @Mock
     private TrelloClient trelloClient;
-
-    @Mock
-    private SimpleEmailService emailService;
-
-    @Mock
-    private AdminConfig adminConfig;
 
     @Test
     public void testFetchTrelloBoards() {
